@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <marquee direction="right" behavior="scroll">
+            Selamat datang, selamat menghitung
+        </marquee>
+    </div>
+    <div class="calculator">
+        <form class="calculator-screen" action="" name="calculator">
+            <textarea name="layar" value="0" disabled>
+
+        </textarea>
+        </form>
+        <div class="calculator-keys">
+            <div class="row">
+                <button class="all-clear" value="AC" onclick="del()">AC</button>
+                <button class="clear" value="DEL" onclick="backspace()">DEL</button>
+                <button class="precentage" value="%" onclick="persentase()">%</button>
+                <button class="operator" value="/" onclick="masukkanAngka('/')">&divide;</button>
+            </div>
+            <div class="row">
+                <button class="number" value="7" onclick="masukkanAngka('7')">7</button>
+                <button class="number" value="8" onclick="masukkanAngka('8')">8</button>
+                <button class="number" value="9" onclick="masukkanAngka('9')">9</button>
+                <button class="operator" value="x" onclick="masukkanAngka('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="number" value="4" onclick="masukkanAngka('4')">4</button>
+                <button class="number" value="5" onclick="masukkanAngka('5')">5</button>
+                <button class="number" value="6" onclick="masukkanAngka('6')">6</button>
+                <button class="operator" value="-" onclick="masukkanAngka('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="number" value="1" onclick="masukkanAngka('1')">1</button>
+                <button class="number" value="2" onclick="masukkanAngka('2')">2</button>
+                <button class="number" value="3" onclick="masukkanAngka('3')">3</button>
+                <button class="operator" value="+" onclick="masukkanAngka('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="number zero-btn" value="0" onclick="masukkanAngka('0')">0</button>
+                <button class="decimal" value="." onclick="masukkanAngka('.')">.</button>
+                <button class="equal-sign" value="=" onclick="kalkulasi()">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <marquee direction="left" behavior="scroll">
+            By: Oktavia Rokmana Dewi
+        </marquee>
+    </div>
+
+
+
+
+</body>
+
+</html>
